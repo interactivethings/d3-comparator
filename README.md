@@ -8,7 +8,7 @@ If you want to sort by a single dimension, you end up writing comparators like `
 
 d3.<b>comparator</b>()
 
-Constructs a new comparator with the default return value `0`. I.e. using it will not change sort order.
+Constructs a new comparator with the default return value 0. I.e. using it will not change sort order.
 
 <b>comparator</b>(<i>a</i>, <i>b</i>)
 
