@@ -30,8 +30,14 @@ Example using two dimensions, roughly equivalent to SQL `ORDER BY date DESC, nam
 
 ```javascript
 var cmp = d3.comparator()
-  .dimension(d3.descending, function(d) { return d.date; })
-  .dimension(d3.ascending, function(d) { return d.name; });
+  .dimension(d3.descending, function(d) { return d.name; })
+  .dimension(d3.ascending, function(d) { return d.value; });
+```
+
+<i>Note:</i> These are just comparator functions. To acually sort an array use
+
+```javascript
+someArray.sort(cmp);
 ```
 
 ## Author
