@@ -1,0 +1,27 @@
+{
+  "name": "d3.comparator",
+  "version": "0.0.1",
+  "description": "Multi-dimensional comparator function generator for D3",
+  "main": "d3.comparator.js",
+  "scripts": {
+    "test": "node_modules/.bin/vows --spec"
+  },
+  "repository": "https://github.com/interactivethings/d3-comparator.git",
+  "keywords": [
+    "d3",
+    "comparator",
+    "array",
+    "sort"
+  ],
+  "author": {
+    "name": "Jeremy Stucki",
+    "url": "http://interactivethings.com"
+  },
+  "license": "BSD",
+  "dependencies": {
+    "d3": "~3.1.5"
+  },
+  "devDependencies": {
+    "vows": "~0.7.0"
+  }
+}
