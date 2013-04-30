@@ -26,11 +26,11 @@ Example using a single dimension:
 var cmp = d3.comparator().dimension(d3.ascending, function(d) { return d.value; });
 ```
 
-Example using two dimensions, roughly equivalent to SQL `ORDER BY date DESC, name ASC`:
+Example using two dimensions, roughly equivalent to SQL `ORDER BY year DESC, value ASC`:
 
 ```javascript
 var cmp = d3.comparator()
-  .dimension(d3.descending, function(d) { return d.name; })
+  .dimension(d3.descending, function(d) { return d.year; })
   .dimension(d3.ascending, function(d) { return d.value; });
 ```
 
