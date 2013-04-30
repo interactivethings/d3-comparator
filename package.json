@@ -19,7 +19,7 @@
   },
   "license": "BSD",
   "dependencies": {
-    "d3": "~3.1.5"
+    "d3": "*"
   },
   "devDependencies": {
     "vows": "~0.7.0"
