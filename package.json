@@ -1,6 +1,6 @@
 {
   "name": "d3.comparator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Multi-dimensional comparator function generator for D3",
   "main": "d3.comparator.js",
   "scripts": {

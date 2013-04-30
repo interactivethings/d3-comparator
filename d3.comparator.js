@@ -21,6 +21,6 @@
 
     return comparator;
   }
+  
+  function identity(d) { return d; }
 })();
-
-function identity(d) { return d; }
