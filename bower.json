@@ -1,0 +1,11 @@
+{
+  "name": "d3-comparator",
+  "version": "0.0.2",
+  "main": "d3.comparator.js",
+  "dependencies": {
+    "d3": "*"
+  },
+  "devDependencies": {
+    "vows": "~0.7.0"
+  }
+}
