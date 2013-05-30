@@ -3,7 +3,7 @@ var vows = require('vows'),
 
 d3 = require('d3');
 
-var comparator = require("../d3.comparator.js");
+var comparator = require("../d3-comparator.js");
 
 vows.describe('d3.comparator').addBatch({
   'd3.comparator' : {

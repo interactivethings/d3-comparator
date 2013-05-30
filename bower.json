@@ -1,7 +1,7 @@
 {
   "name": "d3-comparator",
-  "version": "0.0.2",
-  "main": "d3.comparator.js",
+  "version": "0.1.0",
+  "main": "d3-comparator.js",
   "dependencies": {
     "d3": "*"
   },

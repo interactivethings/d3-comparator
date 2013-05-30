@@ -1,8 +1,8 @@
 {
   "name": "d3-comparator",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Multi-dimensional comparator function generator for D3",
-  "main": "d3.comparator.js",
+  "main": "d3-comparator.js",
   "scripts": {
     "test": "node_modules/.bin/vows --spec"
   },
