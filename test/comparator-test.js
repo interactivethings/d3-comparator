@@ -17,7 +17,7 @@ vows.describe('d3.comparator').addBatch({
     },
     'sorts without accessor': function(comparator) {
       var c = comparator()
-        .dimension(d3.ascending);
+        .order(d3.ascending);
 
       var data = [1, 3, 2].sort(c);
 
@@ -25,7 +25,7 @@ vows.describe('d3.comparator').addBatch({
     },
     'sorts with accessor': function(comparator) {
       var c = comparator()
-        .dimension(d3.ascending, function(d) { return d.value});
+        .order(d3.ascending, function(d) { return d.value});
 
       var data = [
         {value: 1},
@@ -41,8 +41,8 @@ vows.describe('d3.comparator').addBatch({
     },
     'sorts on multiple dimensions, prioritized by order': function(comparator) {
       var c = comparator()
-        .dimension(d3.descending, function(d) { return d.id})
-        .dimension(d3.ascending, function(d) { return d.value});
+        .order(d3.descending, function(d) { return d.id})
+        .order(d3.ascending, function(d) { return d.value});
 
       var data = [
         {id: "a", value: 1},

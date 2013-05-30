@@ -14,7 +14,7 @@ Constructs a new comparator with the default return value 0. I.e. using it will 
 
 The comparator can be used with the array sort method.
 
-comparator.<b>dimension</b>(<i>cmp</i>, [<i>accessor</i>])
+comparator.<b>order</b>(<i>cmp</i>, [<i>accessor</i>])
 
 Adds a dimension to the comparator. The return value of <i>accessor</i> will be compared with <i>cmp</i> (which has to be a comparator function itself, e.g. d3.ascending). If <i>accessor</i> isn't specified, an identity function `function(d) { return d; }` is used.
 
@@ -23,15 +23,15 @@ Dimensions are compared in order. As soon as <i>cmp</i> returns something other 
 Example using a single dimension:
 
 ```javascript
-var cmp = d3.comparator().dimension(d3.ascending, function(d) { return d.value; });
+var cmp = d3.comparator().order(d3.ascending, function(d) { return d.value; });
 ```
 
 Example using two dimensions, roughly equivalent to SQL `ORDER BY year DESC, value ASC`:
 
 ```javascript
 var cmp = d3.comparator()
-  .dimension(d3.descending, function(d) { return d.year; })
-  .dimension(d3.ascending, function(d) { return d.value; });
+  .order(d3.descending, function(d) { return d.year; })
+  .order(d3.ascending, function(d) { return d.value; });
 ```
 
 <i>Note:</i> These are just comparator functions. To acually sort an array use

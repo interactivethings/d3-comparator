@@ -13,7 +13,7 @@
       return 0;
     }
 
-    comparator.dimension = function(cmp, accessor) {
+    comparator.order = function(cmp, accessor) {
       cmps.push(cmp);
       accessors.push(accessor || identity);
       return comparator;
